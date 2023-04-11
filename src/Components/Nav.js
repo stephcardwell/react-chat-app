@@ -1,3 +1,4 @@
+
 import { auth } from '../Firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { GoogleAuthProvider, signInWithRedirect, signOut } from 'firebase/auth';
@@ -19,11 +20,11 @@ const Nav = () => {
             <h1>React Chat</h1>
             {
                 user ? (
-                    <button className="in-out" type="button" onClick={signUserOut}>
+                    <button className="sign-in" type="button" onClick={signUserOut}>
                         Sign Out {user.displayName}
                     </button>
                 ) : (
-                    <button className="in-out" type="button" onClick={signUserIn}>
+                    <button className="sign-in" type="button" onClick={signUserIn}>
                         Sign In with Google
                     </button>
                 )
