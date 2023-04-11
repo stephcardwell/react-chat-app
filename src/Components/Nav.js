@@ -16,7 +16,7 @@ const Nav = () => {
     }
     
     return (
-        <nav className="nav">
+        <nav className="nav-bar">
             <h1>React Chat</h1>
             {
                 user ? (
